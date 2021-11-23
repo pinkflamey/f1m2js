@@ -1,3 +1,13 @@
 body {
     background-color: pink;
 }
+
+#kopje {
+    background-color: black;
+    color: white;
+}
+
+li {
+    padding: 15px;
+    border: 2px solid grey;
+}
