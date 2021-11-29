@@ -1,0 +1,44 @@
+h1 {
+    color: pink;
+    margin: 5px;
+    padding: 5px;
+}
+
+.position-display {
+    font-size: 30px;;
+
+    color: pink;
+
+    padding: 5px;
+    margin: 5px;
+    width: 14vw;
+
+    float: left;
+}
+
+body {
+    background-color: black;
+}
+
+.gallery {
+    float: left;
+    width: 500px;
+    height: 500px;
+
+    margin: 5px;
+    border: 5px solid white;
+}
+
+.button {
+    background-color: bisque;
+    border: 5px solid white;
+    padding: 5px;
+    margin: 5px;
+    width: 14vw;
+
+    float: left;
+}
+
+.button:hover {
+    background-color: antiquewhite;
+}

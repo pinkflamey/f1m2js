@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Slideshow gallerij</h1>
+
+    <img id="galleryElement" class="gallery" src="https://placekitten.com/500/500">
+
+    <div class="button" onclick="previousImage()">
+        <- Previous image
+    </div>
+    <div class="button" onclick="nextImage()">
+        Next image ->
+    </div>
+    <div id="displayElement" class="position-display">
+        Image: 0
+    </div>
+
+
+    <script>
+
+        var pos = 0;
+
+        const imgs = [
+        "https://placekitten.com/500/500",
+        "https://placekitten.com/505/505",
+        "https://placekitten.com/500/501",
+        "https://placekitten.com/502/500",
+        "https://placekitten.com/500/502",
+        "https://placekitten.com/501/501",
+        "https://placekitten.com/502/502",
+        "https://placekitten.com/503/500"
+        ];
+
+        var imgElement = document.getElementById('galleryElement');
+        var displayElement = document.getElementById('displayElement');
+
+        console.log('displayed image: ' + pos);
+
+        function nextImage() {
+            console.log("'Next image' button pressed");
+
+            pos = pos + 1;
+            if(pos == 8) {
+                pos = 0;
+            }
+            setImage();
+            setPosDisplay();
+            
+        }
+        function previousImage() {
+            console.log("'Previous image' button pressed");
+
+            pos = pos - 1;
+            if(pos == -1) {
+                pos = 7;
+            }
+            setImage();
+            setPosDisplay();
+            
+        }
+
+        function setImage() {
+            imgElement.src = imgs[pos];
+            console.log('displayed position: ' + pos);
+        }
+
+        function setPosDisplay(){
+            displayElement.innerHTML = "Image: " + pos;
+        }
+
+    </script>
+
+</body>
+</html>

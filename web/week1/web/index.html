@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>F1M2-JS</title>
+</head>
+<body>
+    <h1 id="kopje">Museum Online: Javascript</h1>
+
+    <ul>
+        <li id="mkBlack">Style: zwart</li>
+        <li id="mkPink">Style: roze</li>
+        <li id="mkDefault">Style: default</li>
+        <li id="mkYellow">Style: geel</li>
+        <li id="mkRed">Style: rood</li>
+        <li id="mkBlue">Style: blauw</li>
+    </ul>
+
+    <script>
+        
+        const kopje = document.getElementById("kopje");
+
+        const mkBlack = document.getElementById("mkBlack");
+        const mkPink = document.getElementById("mkPink");
+        const mkDefault = document.getElementById("mkDefault");
+        const mkYellow = document.getElementById("mkYellow");
+        const mkRed = document.getElementById("mkRed");
+        const mkBlue = document.getElementById("mkBlue");
+
+        mkBlack.addEventListener("click", makeBlack);
+        mkPink.addEventListener("click", makePink);
+        mkDefault.addEventListener("click", makeDefault);
+        mkYellow.addEventListener("click", makeYellow);
+        mkRed.addEventListener("click", makeRed);
+        mkBlue.addEventListener("click", makeBlue);
+
+        function makeBlack() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+        function makePink() {
+            document.body.style.backgroundColor = "pink";
+            document.body.style.color = "teal";
+            kopje.style.backgroundColor = "teal";
+            kopje.style.color = "pink";
+        }
+
+        function makeDefault() {
+            document.body.style.backgroundColor = "pink";
+            document.body.style.color = "black";
+            kopje.style.backgroundColor = "black";
+            kopje.style.color = "white";
+        }
+
+        function makeYellow() {
+            document.body.style.backgroundColor = "yellow";
+            document.body.style.color = "black";
+            kopje.style.backgroundColor = "black";
+            kopje.style.color = "yellow";
+        }
+
+        function makeRed() {
+            document.body.style.backgroundColor = "red";
+            document.body.style.color = "yellow";
+            kopje.style.backgroundColor = "yellow";
+            kopje.style.color = "red";
+        }
+
+        function makeBlue() {
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "yellow";
+            kopje.style.backgroundColor = "yellow";
+            kopje.style.color = "blue";
+        }
+
+    </script>
+</body>
+</html>
