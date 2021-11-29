@@ -1,0 +1,29 @@
+body {
+    background-color: pink;
+    color: black;
+}
+
+.exercises {
+    background-color: hotpink;
+    border: 2px solid black;
+}
+
+.exercise {
+    list-style-type: none;
+    padding: 5px;
+}
+.exercise:hover {
+    background-color: darkmagenta;
+}
+.exercise a {
+    text-decoration: none;
+    color: black;
+}
+
+.back {
+    background-color: hotpink;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    width: fit-content;
+    padding: 5px;
+}

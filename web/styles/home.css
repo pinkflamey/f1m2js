@@ -1,0 +1,21 @@
+body {
+    background-color: pink;
+    color: black;
+}
+
+.weeks {
+    background-color: hotpink;
+    border: 2px solid black;
+}
+
+.week {
+    list-style-type: none;
+    padding: 5px;
+}
+.week:hover {
+    background-color: darkmagenta;
+}
+.week a {
+    text-decoration: none;
+    color: black;
+}
