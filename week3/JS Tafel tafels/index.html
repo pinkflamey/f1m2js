@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Table tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table id="table" class="table">
+    </table>
+    <table id="table2">
+    </table>
+    
+    <script>
+        var table = document.getElementById("table");
+
+        for(var i = 1; i <= 100; i++){
+
+            var row = document.createElement("tr");
+
+            for(var j = 1; j <= 100; j++){
+
+                var tableData = document.createElement("td");
+
+                //tableData.innerHTML = i * j;
+
+                var color = "rgb(" + i * 1.5 + ", " + j * 1.5 + ", " + i * 0.05 * j + ")";
+                var color2 = "rgb(" + j * 1.5 + ", " + i * 1.5 + ", " + j * 0.05 * i + ")";
+
+                tableData.style.backgroundColor = color;
+
+                tableData.style.border = "2.5px solid " + color2;
+
+                row.appendChild(tableData);
+
+            }
+
+            
+
+            table.appendChild(row);
+
+        }
+
+        var table2 = document.getElementById("table2");
+
+        for(var x = 1; x <= 100; x++){
+            
+            var row2 = document.createElement("tr");
+
+            for(var y = 1; y <= 100; y++){
+
+                var tableData2 = document.createElement("td");
+
+                //tableData2.innerHTML = x * y;
+
+                var color = "rgb(" + y*2.5 + ", 100, " + x*2.5 + ")";
+
+                tableData2.style.backgroundColor = color;
+
+                tableData2.style.border = "2.5px solid " + color;
+
+                row2.appendChild(tableData2);
+
+            }
+
+            table2.appendChild(row2);
+
+        }
+
+    </script>
+
+</body>
+</html>
