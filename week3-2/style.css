@@ -1,0 +1,92 @@
+
+@keyframes transition {
+    0% {
+        background-color: bisque;
+    }
+    25% {
+        background-color: beige;
+    }
+    50% {
+        background-color: bisque;
+    }
+    75% {
+        background-color: beige;
+    }
+    100% {
+        background-color: bisque;
+    }
+}
+@keyframes buttonTransition {
+    0% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: beige;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    margin: 0px;
+
+    animation-name: transition;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#container {
+    background-color: bisque;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+}
+
+
+button {
+    width: 15vw;
+    font-size: 110%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+
+    border: none;
+    background-color: bisque;
+}
+button:hover {
+    animation-name: buttonTransition;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    text-align: center;
+    font-size: 250%;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    max-width: 50vw;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    height: 20vw;
+    background-size: cover;
+
+    border-radius: 10px;
+
+    transition: 0.25s transform;
+}
+img:hover {
+    transform: scale(110%) rotate(5deg);
+}
