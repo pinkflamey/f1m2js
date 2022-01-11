@@ -1,0 +1,50 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    background-color: brown;
+    height: 600px;
+    margin: 50px auto auto auto;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 337.5px auto;
+
+    text-align: center;
+    font-size: xxx-large;
+}
+
+#myInteraction {
+    background-color: crimson;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+img {
+    height: 600px;
+    width: auto;
+}
+
+input {
+    width: 300px;
+    border-radius: 5px;
+    font-size: larger;
+
+    display: block;
+    margin: 0 auto;
+
+    
+    margin-top: 50px;
+}
+
+#button {
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+}
+
+#button:hover {
+    background-color: burlywood;
+}
