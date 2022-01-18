@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="updateDirections()">
     
     <div id="container">
 
@@ -17,13 +17,24 @@
             
             <div id="myTitle">
 
-                plaats 0
+                Plaats 0
 
             </div>
 
             <input type="text" id="myInput" autocomplete="off">
 
             <input id="button" type="button" value="Go!" onclick="getInput()">
+
+            <h6>
+                Kies welke richting je op gaat:
+            </h6>
+            <nav>
+                <button id="buttonNoord" onclick="goDirection('noord')">Noord</button>
+                <button id="buttonOost" onclick="goDirection('oost')">Oost</button>
+                <button id="buttonZuid" onclick="goDirection('zuid')">Zuid</button>
+                <button id="buttonWest" onclick="goDirection('west')">West</button>
+            </nav>
+            <img src="img/map_compass.png" alt="Map" class="map">
 
         </div>
 

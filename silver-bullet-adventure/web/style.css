@@ -5,7 +5,7 @@ body {
 
 #container {
     background-color: brown;
-    height: 600px;
+    height: auto;
     margin: 50px auto auto auto;
     padding: 10px;
 
@@ -20,11 +20,17 @@ body {
     background-color: crimson;
     padding-top: 10px;
     margin-left: 10px;
+
 }
 
 img {
     height: 600px;
     width: auto;
+}
+.map {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 input {
@@ -36,15 +42,53 @@ input {
     margin: 0 auto;
 
     
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #button {
     background-color: brown;
     border: none;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 #button:hover {
     background-color: burlywood;
+}
+
+h6 {
+    margin: 20px 0 20px 0;
+}
+
+nav {
+    display: grid;
+    grid-template-areas: 
+    'north north'
+    'west east'
+    'south south';
+    row-gap: 2px;
+    column-gap: 2px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+nav > button {
+    height: 40px;
+    background-color: brown;
+    border: 1px solid black;
+}
+nav > button:hover {
+    background-color: burlywood;
+}
+#buttonNoord {
+    grid-area: north;
+}
+#buttonOost {
+    grid-area: east;
+}
+#buttonZuid {
+    grid-area: south;
+}
+#buttonWest {
+    grid-area: west;
 }
